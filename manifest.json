@@ -1,0 +1,12 @@
+{
+"name":"Pega Deselect Tracer",
+"description":"Chrome extension that add button \"Deselect Pega\" ruleset for Tracer Configuration",
+"version":"1",
+"manifest_version":2,
+"content_scripts": [
+    {
+      "matches": ["http://*/*pyStream=TraceOptionsDialog*","https://*/*pyStream=TraceOptionsDialog*"],
+      "js": ["myscript.js"]
+    }
+  ]
+}
