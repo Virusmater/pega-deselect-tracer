@@ -8,3 +8,4 @@ That extension is not published to Chrome Store yet. So in order for use it:
 3. Chose directory with repository
 
 # screenshot
+![screenshot](https://github.com/pegadevops/pega-deselect-tracer/raw/master/screenshot.png)
