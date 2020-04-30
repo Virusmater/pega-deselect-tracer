@@ -32,10 +32,13 @@ if (document.title.indexOf("Tracer") != -1) {
     	for (var i = ruleSetList.length - 2; i >= 0; i--) {
     		var ruleSetName = ruleSetList[i].cells[0].innerText.trim();
     		if (ruleSetName.startsWith("Pega-")){
-    		  ruleSetList[i].cells[1].lastChild.checked = false;
+				try{
+					ruleSetList[i].cells[1].lastChild.checked = false;
+				}	catch (e){
+					ruleSetList[i].cells[0].firstChild.checked = false;
+				}
     		};
     	}
-
     };
     //Appending to DOM 
     document.getElementById("RuleSetDisplay").children[0].appendChild(btn);
